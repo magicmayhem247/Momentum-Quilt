@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "momentum:block/inert_crystal_block" }
+  }
+}

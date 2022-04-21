@@ -4,7 +4,6 @@ import com.magicmayhem247.Momentum;
 import com.magicmayhem247.common.registry.block.MomentumBlocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
@@ -14,7 +13,6 @@ public class MomentumItems
     //Crafting Materials
     public static final Item INERT_CRYSTAL = new Item(new Item.Settings().group(Momentum.MOMENTUM_ITEM_GROUP));
     public static final Item CHARGED_CRYSTAL = new Item(new Item.Settings().group(Momentum.MOMENTUM_ITEM_GROUP));
-
 
     //Advanced Materials
     public static final Item KINETIC_CRYSTAL = new Item(new Item.Settings().group(Momentum.MOMENTUM_ITEM_GROUP));
@@ -36,6 +34,9 @@ public class MomentumItems
     //BlockItems
         //Debug
         Registry.register(Registry.ITEM, new Identifier("momentum", "momentum_detector"), new BlockItem(MomentumBlocks.MOMENTUM_DETECTOR, new QuiltItemSettings().group(Momentum.MOMENTUM_ITEM_GROUP)));
+
+        //Crafting Materials
+        Registry.register(Registry.ITEM, new Identifier("momentum", "inert_crystal_block"), new BlockItem(MomentumBlocks.INERT_CRYSTAL_BLOCK, new QuiltItemSettings().group(Momentum.MOMENTUM_ITEM_GROUP)));
     }
 
 }
